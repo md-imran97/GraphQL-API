@@ -41,7 +41,7 @@ namespace DataAccessLayer.Database
             modelBuilder.Entity<Book>().HasData(
                 new Book { Id = 1, Name = "Harry Potter", Description = "Fantasy novel", Pages = 350, AuthorID = 1 },
                 new Book { Id = 2, Name = "Parry Hotter", Description = "Nantasy Fovel", Pages = 450, AuthorID = 1 },
-                new Book { Id = 3, Name = "Game of Thrones", Description = "Epic fantasy", Pages = 800, AuthorID = 2 }
+                new Book { Id = 3, Name = "Game of Thrones", Description = "Epic fantasy", Pages = 800, AuthorID = 2 },
                 new Book { Id = 4, Name = "Tame of Ghrones", Description = "Fpic Eantasy", Pages = 850, AuthorID = 2 }
             );
         }
