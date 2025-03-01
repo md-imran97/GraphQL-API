@@ -37,9 +37,9 @@ namespace BusinessLayer.Temporary.Services
              _bookRepository.Add(_mapper.Map<DTOs.Persistence.Book>(book));
             
         }
-        public void Update(Book book)
+        public void Update(int id, Book book)
         {
-           _bookRepository.Update(_mapper.Map<DTOs.Persistence.Book>(book));
+           throw new NotImplementedException();
            
         }
         public void Delete(int id)

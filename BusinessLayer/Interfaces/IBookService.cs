@@ -7,7 +7,7 @@ namespace BusinessLayer.Interfaces
         Book Get(int id);
         List<Book> GetAll();
         void Add(Book entity);
-        void Update(Book entity);
+        void Update(int id, Book entity);
         void Delete(int id);
     }
 }

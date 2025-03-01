@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Services
 {
-    public class BookService : BaseService<Book, int>, IBookService
+    public class BookService : IBookService
     {
         private readonly IBookRepository _bookRepository;
         private readonly IMapper _mapper;
@@ -34,10 +34,9 @@ namespace BusinessLayer.Services
             _bookRepository.Add(_mapper.Map<DTOs.Persistence.Book>(book));
 
         }
-        public void Update(Book book)
+        public void Update(int id, Book book)
         {
-            _bookRepository.Update(_mapper.Map<DTOs.Persistence.Book>(book));
-
+            throw new NotImplementedException();
         }
         public void Delete(int id)
         {

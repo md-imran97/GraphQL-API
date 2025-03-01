@@ -36,7 +36,7 @@ namespace BusinessLayer.Services
             _authorRepository.Add(_mapper.Map<DTOs.Persistence.Author>(entity));
         }
 
-        public void Update(Author entity)
+        public void Update(int id, Author entity)
         {
             throw new NotImplementedException();
         }

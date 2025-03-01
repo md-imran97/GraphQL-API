@@ -12,7 +12,7 @@ namespace BusinessLayer.Interfaces
         Author Get(int id);
         List<Author> GetAll();
         void Add(Author entity);
-        void Update(Author entity);
+        void Update(int id, Author entity);
         void Delete(int id);
     }
 }
